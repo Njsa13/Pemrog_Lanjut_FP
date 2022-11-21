@@ -63,6 +63,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FoodnBev.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -88,6 +92,9 @@
     </Compile>
     <Compile Include="Create.xaml.cs">
       <DependentUpon>Create.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoodnBev.xaml.cs">
+      <DependentUpon>FoodnBev.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -155,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="migoreng1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
