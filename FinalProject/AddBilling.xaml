@@ -9,25 +9,74 @@
       Title="AddBilling">
 
     <Grid>
-        <Canvas Background="White">
-            <Rectangle Height="130" Stroke="Black" Width="1356" HorizontalAlignment="Left" VerticalAlignment="Center" Fill="#FFD9D9D9"/>
-            <Label x:Name="label" Content="Add Billing" Canvas.Left="550" Canvas.Top="22" Height="86" Width="266" FontSize="48" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Border BorderBrush="Black" BorderThickness="0                 " CornerRadius="25" Height="114" Width="1238" Background="#FFD9D9D9" HorizontalAlignment="Left" Canvas.Left="64" Canvas.Top="177" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect Opacity="0.4" ShadowDepth="2"/>
-                </Border.Effect>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0                 " CornerRadius="25" Height="114" Width="1238" Background="#FFD9D9D9" Canvas.Left="64" Canvas.Top="327" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect Opacity="0.4" ShadowDepth="2"/>
-                </Border.Effect>
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="0                 " CornerRadius="25" Height="114" Width="1238" Background="#FFD9D9D9" Canvas.Left="59" Canvas.Top="476" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Border.Effect>
-                    <DropShadowEffect Opacity="0.4" ShadowDepth="2"/>
-                </Border.Effect>
-            </Border>
+        <Canvas Background="White" Margin="0,-3,0,3">
+            <Rectangle Height="130" Stroke="Black" Width="1366" HorizontalAlignment="Left" VerticalAlignment="Center" Fill="#FFD9D9D9"/>
+            <Label x:Name="label" Content="Add Billing" Canvas.Left="492" Height="108" Width="382" FontSize="72" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="Back1" Content="1 Jam" Canvas.Left="133" Canvas.Top="206" Width="220" Height="140" FontSize="24" BorderThickness="0" FontWeight="Bold" Click="Back1_Click" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Padding="1,1,1,30">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <Label x:Name="label1_Copy2" Content="Rp100.000" Canvas.Left="197" Canvas.Top="270" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Height="52" Width="104"/>
+            <Button x:Name="Back1_Copy" Content="1 Jam" Canvas.Left="133" Canvas.Top="382" Width="220" Height="140" FontSize="24" BorderThickness="0" FontWeight="Bold" Click="Back1_Click" RenderTransformOrigin="0.5,0.5" Padding="1,1,1,30" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <Label x:Name="label1_Copy" Content="Rp100.000" Canvas.Left="197" Canvas.Top="446" FontSize="18" Height="52" Width="104" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button x:Name="Back1_Copy2" Content="1 Jam" Canvas.Left="454" Canvas.Top="206" Width="220" Height="140" FontSize="24" BorderThickness="0" FontWeight="Bold" Click="Back1_Click" RenderTransformOrigin="0.5,0.5" Padding="1,1,1,30" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <Label x:Name="label1_Copy3" Content="Rp100.000" Canvas.Left="518" Canvas.Top="270" FontSize="18" Height="52" Width="104" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="Back1_Copy3" Content="1 Jam" Canvas.Left="454" Canvas.Top="384" Width="220" Height="140" FontSize="24" BorderThickness="0" FontWeight="Bold" Click="Back1_Click" RenderTransformOrigin="0.5,0.5" Padding="1,1,1,30" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <Label x:Name="label1_Copy4" Content="Rp100.000" Canvas.Left="518" Canvas.Top="448" FontSize="18" Height="52" Width="104" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         </Canvas>
+        <Button x:Name="Create_Crt" Content="Next" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="CreateCrt" Foreground="Black" Background="#FFDDDDDD" Margin="1106,618,110,110">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Back_Crt" Content="Back" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="BackCrt" Foreground="Black" Background="#FFDDDDDD" Margin="110,618,1106,110">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+            </Button.Effect>
+        </Button>
 
 
     </Grid>
