@@ -27,7 +27,8 @@ namespace FinalProject
 
         private void Add_Billing(object sender, RoutedEventArgs e)
         {
-
+            var addbilling = new AddBilling();
+            NavigationService.Navigate(addbilling);
         }
 
         private void Food_Button(object sender, RoutedEventArgs e)

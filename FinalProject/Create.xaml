@@ -44,7 +44,7 @@
                 </TextBox.Resources>
             </TextBox>
             <Label Content="Confirm Password :" Canvas.Left="105" Canvas.Top="330" FontSize="30" FontWeight="Bold" Width="289" Height="50"/>
-            <Button x:Name="Back_Crt" Content="Back" Canvas.Left="110" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="BackCrt" Foreground="Black" Background="#FFDDDDDD">
+            <Button x:Name="Back_Crt" Content="Back" Canvas.Left="110" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="BackCrt" Foreground="Black" Background="#FFDDDDDD" Padding="1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
