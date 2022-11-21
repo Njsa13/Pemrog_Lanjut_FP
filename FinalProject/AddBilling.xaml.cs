@@ -25,7 +25,32 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void BackAdd(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
+
+        private void NextAdd(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Bill1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Bill2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Bill4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Bill3(object sender, RoutedEventArgs e)
         {
 
         }

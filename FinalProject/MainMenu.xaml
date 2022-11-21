@@ -10,7 +10,7 @@
 
     <Grid>
         <Canvas Background="#FFD9D9D9">
-            <Border BorderThickness="1" CornerRadius="30" Height="537" Canvas.Left="921" Canvas.Top="81" Width="361" Background="#FFFAFAFB">
+            <Border BorderThickness="1" CornerRadius="30" Height="537" Canvas.Left="937" Canvas.Top="81" Width="361" Background="#FFFAFAFB">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Border.Effect>
@@ -20,117 +20,104 @@
                     </TextBlock.Effect>
                 </TextBlock>
             </Border>
-            <Border BorderThickness="1" CornerRadius="30" Height="319" Canvas.Left="80" Canvas.Top="81" Width="800" Background="#FFFAFAFB">
+            <Border BorderThickness="1" CornerRadius="30" Height="319" Canvas.Left="79" Canvas.Top="81" Width="800" Background="#FFFAFAFB">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Border.Effect>
             </Border>
-            <Border BorderThickness="1" CornerRadius="30" Height="178" Canvas.Left="80" Canvas.Top="440" Width="800" Background="#FFFAFAFB">
+            <Border BorderThickness="1" CornerRadius="30" Height="178" Canvas.Left="77" Canvas.Top="442" Width="800" Background="#FFFAFAFB">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Border.Effect>
             </Border>
-            <Button x:Name="LogOut" Content="" Canvas.Left="823" Canvas.Top="457" Height="39" Width="39" Click="Log_Out" BorderThickness="0" Panel.ZIndex="1">
+            <Button x:Name="LogOut" Content="" Canvas.Left="820" Canvas.Top="459" Height="39" Width="39" Click="Log_Out" BorderThickness="0" Panel.ZIndex="1">
                 <Button.Background>
                     <ImageBrush ImageSource="Icon4.png"/>
                 </Button.Background>
             </Button>
-
+            <Button x:Name="AddBilling" Content="Add Billing" HorizontalAlignment="Left" VerticalAlignment="Top" Width="299" Click="Add_Billing" Height="50" FontSize="30" BorderThickness="0" Background="#FFBFBFBF" Foreground="Black" FontWeight="Bold" Padding="35,1,0,9.7" HorizontalContentAlignment="Left" Canvas.Left="967" Canvas.Top="173">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="Food" Content="Food" HorizontalAlignment="Left" VerticalAlignment="Top" Width="299" Click="Food_Button" Height="50" FontSize="30" BorderThickness="0" Background="#FFBFBFBF" Foreground="Black" FontWeight="Bold" Padding="35,1,0,9.7" HorizontalContentAlignment="Left" Canvas.Left="967" Canvas.Top="243">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="BillingList" Content="Billing List" HorizontalAlignment="Left" VerticalAlignment="Top" Width="299" Click="Billing_List" Height="50" FontSize="30" BorderThickness="0" Background="#FFBFBFBF" Foreground="Black" FontWeight="Bold" Padding="35,1,0,9.7" HorizontalContentAlignment="Left" Canvas.Left="967" Canvas.Top="313">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <Border BorderBrush="Black" BorderThickness="0" CornerRadius="30" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="359" Canvas.Left="938" Canvas.Top="379">
+                <Border.Background>
+                    <ImageBrush ImageSource="Pig.jpg"/>
+                </Border.Background>
+            </Border>
+            <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="198" VerticalAlignment="Top" Width="360" Background="#FF767676" Canvas.Left="298" Canvas.Top="128">
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Border.Effect>
+                <Label Content="Time Left" HorizontalAlignment="Center" Margin="0" Padding="5,25,5,5" Foreground="White" FontWeight="Bold" FontSize="35"/>
+            </Border>
+            <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="82" VerticalAlignment="Top" Width="236" Background="#FF444444" RenderTransformOrigin="0.5,0.5" Canvas.Left="360" Canvas.Top="208">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.43"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.742"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+                <Label Content="03 : 47" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="White" Margin="38,0,38,8"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0
+                    " CornerRadius="25" HorizontalAlignment="Left" Height="114" VerticalAlignment="Top" Width="240" Background="#FF767676" Canvas.Left="108" Canvas.Top="477">
+                <Border.Effect>
+                    <DropShadowEffect Opacity="0.4" ShadowDepth="2"/>
+                </Border.Effect>
+                <Label Content="Current Time" Foreground="White" HorizontalAlignment="Center" Padding="5,7,5,5" FontWeight="Bold" FontSize="20"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="192" Background="#FF444444" Canvas.Left="132" Canvas.Top="526">
+                <Label Content="14 : 25" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="26"/>
+            </Border>
+            <Label Content="18 November 2022&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="477"/>
+            <Label Content="No. 6 Computer" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="516"/>
+            <Label Content="Username : Auli77" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="555"/>
+            <Rectangle HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="22" Canvas.Left="487" Canvas.Top="481">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Icon6.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="22" Canvas.Left="487" Canvas.Top="520">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Icon5.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="22" Canvas.Left="487" Canvas.Top="561">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Icon7.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="38" Source="Icon2.png" RenderTransformOrigin="0.421,-0.188" Canvas.Left="1220" Canvas.Top="179"/>
+            <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="38" Source="Icon1.png" RenderTransformOrigin="0.421,-0.188" Canvas.Left="1220" Canvas.Top="249"/>
+            <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="38" Source="Icon3.png" RenderTransformOrigin="0.421,-0.188" Canvas.Left="1220" Canvas.Top="319"/>
         </Canvas>
-        <Button x:Name="AddBilling" Content="Add Billing" HorizontalAlignment="Left" VerticalAlignment="Top" Width="299" Click="Add_Billing" Height="50" FontSize="30" BorderThickness="0" Background="#FFBFBFBF" Foreground="Black" FontWeight="Bold" Padding="35,1,0,9.7" Margin="951,172,0,0" HorizontalContentAlignment="Left">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="25"/>
-                </Style>
-            </Button.Resources>
-            <Button.Effect>
-                <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="Food" Content="Food" HorizontalAlignment="Left" VerticalAlignment="Top" Width="299" Click="Food_Button" Height="50" FontSize="30" BorderThickness="0" Background="#FFBFBFBF" Foreground="Black" FontWeight="Bold" Padding="35,1,0,9.7" Margin="951,242,0,0" HorizontalContentAlignment="Left">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="25"/>
-                </Style>
-            </Button.Resources>
-            <Button.Effect>
-                <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="BillingList" Content="Billing List" HorizontalAlignment="Left" VerticalAlignment="Top" Width="299" Click="Billing_List" Height="50" FontSize="30" BorderThickness="0" Background="#FFBFBFBF" Foreground="Black" FontWeight="Bold" Padding="35,1,0,9.7" Margin="951,312,0,0" HorizontalContentAlignment="Left">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="25"/>
-                </Style>
-            </Button.Resources>
-            <Button.Effect>
-                <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-            </Button.Effect>
-        </Button>
-        <Rectangle HorizontalAlignment="Left" Height="39" Margin="1204,178,0,0" VerticalAlignment="Top" Width="39">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="Icon2.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="39" Margin="1204,247,0,0" VerticalAlignment="Top" Width="39">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="Icon1.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="39" Margin="1204,317,0,0" VerticalAlignment="Top" Width="39">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="Icon3.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Border BorderBrush="Black" BorderThickness="0" CornerRadius="30" HorizontalAlignment="Left" Height="240" Margin="922,378,0,0" VerticalAlignment="Top" Width="359">
-            <Border.Background>
-                <ImageBrush ImageSource="Pig.jpg"/>
-            </Border.Background>
-        </Border>
-        <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="198" Margin="300,122,0,0" VerticalAlignment="Top" Width="360" Background="#FF767676">
-            <Border.Effect>
-                <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-            </Border.Effect>
-            <Label Content="Time Left" HorizontalAlignment="Center" Margin="0" Padding="5,25,5,5" Foreground="White" FontWeight="Bold" FontSize="35"/>
-        </Border>
-        <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="82" Margin="362,202,0,0" VerticalAlignment="Top" Width="236" Background="#FF444444" RenderTransformOrigin="0.5,0.5">
-            <Border.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="0.43"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="0.742"/>
-                </TransformGroup>
-            </Border.RenderTransform>
-            <Label Content="03 : 47" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="White" Margin="38,0,38,8"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="0
-                " CornerRadius="25" HorizontalAlignment="Left" Height="114" Margin="110,471,0,0" VerticalAlignment="Top" Width="240" Background="#FF767676">
-            <Border.Effect>
-                <DropShadowEffect Opacity="0.4" ShadowDepth="2"/>
-            </Border.Effect>
-            <Label Content="Current Time" Foreground="White" HorizontalAlignment="Center" Padding="5,7,5,5" FontWeight="Bold" FontSize="20"/>
-        </Border>
-        <Border BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="50" Margin="134,520,0,0" VerticalAlignment="Top" Width="192" Background="#FF444444">
-            <Label Content="14 : 25" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="26"/>
-        </Border>
-        <Label Content="18 November 2022&#xD;&#xA;" HorizontalAlignment="Left" Margin="509,471,0,0" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold"/>
-        <Label Content="No. 6 Computer" HorizontalAlignment="Left" Margin="526,510,0,0" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold"/>
-        <Label Content="Username : Auli77" HorizontalAlignment="Left" Margin="509,549,0,0" VerticalAlignment="Top" Height="35" FontSize="16" FontWeight="Bold"/>
-        <Rectangle HorizontalAlignment="Left" Height="23" Margin="481,475,0,0" VerticalAlignment="Top" Width="23">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="Icon6.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="23" Margin="481,514,0,0" VerticalAlignment="Top" Width="23">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="Icon5.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="23" Margin="481,555,0,0" VerticalAlignment="Top" Width="23">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="Icon7.png"/>
-            </Rectangle.Fill>
-        </Rectangle>
     </Grid>
 </Page>
