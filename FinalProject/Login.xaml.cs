@@ -27,7 +27,8 @@ namespace FinalProject
 
         private void CreateButton(object sender, RoutedEventArgs e)
         {
-
+            var create = new Create();
+            NavigationService.Navigate(create);
         }
 
         private void LoginButton(object sender, RoutedEventArgs e)

@@ -24,5 +24,15 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+
+        private void CreateCrt(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BackCrt(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
     }
 }

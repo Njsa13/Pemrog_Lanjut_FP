@@ -5,10 +5,56 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FinalProject"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="768" d:DesignWidth="1366"
       Title="Create">
 
     <Grid>
-        
+        <Canvas Background="White">
+            <TextBox x:Name="Username_Crt" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="139" Width="400" Background="#FFD9D9D9" FontSize="20" Padding="35,4,0,0" TextAlignment="Justify" Margin="0" ScrollViewer.CanContentScroll="True">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox x:Name="Password_Crt" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="253" Width="400" Background="#FFD9D9D9" Padding="35,4,0,0" FontSize="20">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label Content="Username :" Canvas.Left="105" Canvas.Top="84" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
+            <Label Content="Password :" Canvas.Left="105" Canvas.Top="198" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
+            <Button x:Name="Create_Crt" Content="Create" Canvas.Left="1106" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="CreateCrt" Foreground="Black" Background="#FFDDDDDD">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+            <TextBox x:Name="Password_Crt1" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="385" Width="400" Background="#FFD9D9D9" Padding="35,4,0,0" FontSize="20">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label Content="Confirm Password :" Canvas.Left="105" Canvas.Top="330" FontSize="30" FontWeight="Bold" Width="289" Height="50"/>
+            <Button x:Name="Back_Crt" Content="Back" Canvas.Left="110" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="BackCrt" Foreground="Black" Background="#FFDDDDDD">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                </Button.Effect>
+            </Button>
+
+        </Canvas>
     </Grid>
 </Page>
