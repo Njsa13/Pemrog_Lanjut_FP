@@ -39,7 +39,8 @@ namespace FinalProject
 
         private void Billing_List(object sender, RoutedEventArgs e)
         {
-
+            var list = new BillingList();
+            NavigationService.Navigate(list);
         }
 
         private void Log_Out(object sender, RoutedEventArgs e)

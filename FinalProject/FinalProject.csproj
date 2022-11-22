@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="BillingList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Create.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -89,6 +93,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BillingList.xaml.cs">
+      <DependentUpon>BillingList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Create.xaml.cs">
       <DependentUpon>Create.xaml</DependentUpon>
@@ -177,6 +184,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Geprek.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Grad.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
