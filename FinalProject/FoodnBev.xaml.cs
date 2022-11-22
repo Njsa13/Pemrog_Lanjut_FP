@@ -54,5 +54,15 @@ namespace FinalProject
         {
 
         }
+
+        private void BackFood(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
+        }
+
+        private void NextFood(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

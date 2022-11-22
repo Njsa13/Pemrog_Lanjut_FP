@@ -33,7 +33,8 @@ namespace FinalProject
 
         private void Food_Button(object sender, RoutedEventArgs e)
         {
-
+            var food = new FoodnBev();
+            NavigationService.Navigate(food);
         }
 
         private void Billing_List(object sender, RoutedEventArgs e)

@@ -10,93 +10,189 @@
 
     <Grid>
         <Canvas Background="White" Margin="0,-3,0,3">
-            <Rectangle Height="130" Stroke="Black" Width="1366" Fill="#FFD9D9D9" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Label x:Name="label" Content="Food and Beverages" Canvas.Left="357" Height="108" Width="718" FontSize="72" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
-            <Border x:Name="box1" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="140" VerticalAlignment="Center" Width="957" Background="#FFD7D4D4" Canvas.Left="57" Canvas.Top="157">
-                <Border.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Border.Effect>
-            </Border>
-            <Border x:Name="box2" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="140" Margin="55,325,0,0" VerticalAlignment="Top" Width="957" Background="#FFD7D4D4">
-                <Border.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Border.Effect>
-            </Border>
-            <Border x:Name="box3" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="140" Margin="55,505,0,0" VerticalAlignment="Top" Width="957" Background="#FFD7D4D4">
-                <Border.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Border.Effect>
-            </Border>
-            <Image x:Name="image" Source="/migoreng1.png" Height="107" Canvas.Left="75" Canvas.Top="172" Width="140" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Label x:Name="label1" Content="Indomie Goreng + Telor" Height="60" Width="441" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Left="216" Canvas.Top="170" VerticalAlignment="Top"/>
-            <Label x:Name="label2" Content="Rp7.000" Canvas.Left="216" Canvas.Top="211" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Image x:Name="image_Copy" Source="/migoreng1.png" Height="107" Canvas.Left="75" Canvas.Top="345" Width="140" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label1_Copy" Content="Indomie Goreng + Telor" Height="60" Width="441" FontSize="36" FontWeight="Bold" Canvas.Left="216" Canvas.Top="343" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label2_Copy" Content="Rp7.000" Canvas.Left="216" Canvas.Top="384" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Image x:Name="image_Copy1" Source="/migoreng1.png" Height="107" Canvas.Left="75" Canvas.Top="521" Width="140" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label1_Copy1" Content="Indomie Goreng + Telor" Height="60" Width="441" FontSize="36" FontWeight="Bold" Canvas.Left="216" Canvas.Top="519" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label x:Name="label2_Copy1" Content="Rp7.000" Canvas.Left="216" Canvas.Top="560" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Button x:Name="minus1" Content="-" Canvas.Left="1089" BorderThickness="0" Canvas.Top="204" Click="minus_1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+            <ScrollViewer Height="474" Canvas.Top="129" Width="1366" Padding="0,15,0,0">
+                <Canvas Height="900" Canvas.Left="57" Canvas.Top="157" Width="1197">
+
+                    <Border x:Name="box1" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="120" VerticalAlignment="Center" Width="957" Background="#FFD7D4D4">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Border.Effect>
+                    </Border>
+                    <Image x:Name="image" Source="/migoreng1.png" Height="86" Canvas.Left="32" Canvas.Top="18" Width="113" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Label x:Name="label1" Content="Indomie Goreng + Telor" Height="60" Width="441" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Left="185" Canvas.Top="13" VerticalAlignment="Top"/>
+                    <Label x:Name="label2" Content="Rp 7.000" Canvas.Left="185" Canvas.Top="53" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button x:Name="minus1" Content="-" Canvas.Left="1005" BorderThickness="0" Canvas.Top="38" Click="minus_1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="minus2" Content="-" Canvas.Left="1005" BorderThickness="0" Canvas.Top="200" Click="minus_2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="minus3" Content="-" Canvas.Left="1005" BorderThickness="0" Canvas.Top="362" HorizontalAlignment="Center" VerticalAlignment="Top" Click="minus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="plus2" Content="+" Canvas.Left="1152" BorderThickness="0" Canvas.Top="200" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_2" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="plus1" Content="+" Canvas.Left="1152" BorderThickness="0" Canvas.Top="38" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_1" Width="45" Height="46" RenderTransformOrigin="0.573,0.802" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="plus3" Content="+" Canvas.Left="1152" BorderThickness="0" Canvas.Top="362" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Border x:Name="box1_Copy" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="120" VerticalAlignment="Center" Width="957" Background="#FFD7D4D4" Canvas.Top="162">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Border.Effect>
+                    </Border>
+                    <Image x:Name="image_Copy" Source="IndSoto.jpg" Height="100" Canvas.Left="32" Canvas.Top="172" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Label x:Name="label1_Copy" Content="Indomie Soto + Telor" Height="60" Width="441" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Left="185" Canvas.Top="175" VerticalAlignment="Top"/>
+                    <Label x:Name="label2_Copy" Content="Rp 7.000" Canvas.Left="185" Canvas.Top="215" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Border x:Name="box1_Copy1" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="120" VerticalAlignment="Center" Width="957" Background="#FFD7D4D4" Canvas.Top="324">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Border.Effect>
+                    </Border>
+                    <Image x:Name="image_Copy1" Source="MieDok2.png" Height="84" Canvas.Left="19" Canvas.Top="342" Width="140" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Label x:Name="label1_Copy1" Content="Mie Dok Dok" Height="60" Width="441" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Left="185" Canvas.Top="337" VerticalAlignment="Top"/>
+                    <Label x:Name="label2_Copy1" Content="Rp 12.000" Canvas.Left="185" Canvas.Top="377" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Label x:Name="Labl1" Content="1" Canvas.Left="1088" Canvas.Top="29" FontSize="36"/>
+                    <Label x:Name="Labl2" Content="1" Canvas.Left="1088" Canvas.Top="191" FontSize="36"/>
+                    <Label x:Name="Labl3" Content="1" Canvas.Left="1088" Canvas.Top="353" FontSize="36"/>
+                    <Button x:Name="minus3_Copy" Content="-" Canvas.Left="1005" BorderThickness="0" Canvas.Top="524" HorizontalAlignment="Center" VerticalAlignment="Top" Click="minus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="plus3_Copy" Content="+" Canvas.Left="1152" BorderThickness="0" Canvas.Top="524" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Border x:Name="box1_Copy2" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="120" VerticalAlignment="Center" Width="957" Background="#FFD7D4D4" Canvas.Top="486">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Border.Effect>
+                    </Border>
+                    <Image x:Name="image_Copy2" Source="es teh.png" Height="77" Canvas.Left="45" Canvas.Top="505" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Label x:Name="label1_Copy2" Content="Es Teh" Height="60" Width="441" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Left="185" Canvas.Top="499" VerticalAlignment="Top"/>
+                    <Label x:Name="label2_Copy2" Content="Rp 3000" Canvas.Left="185" Canvas.Top="539" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Label x:Name="Labl3_Copy" Content="1" Canvas.Left="1088" Canvas.Top="515" FontSize="36"/>
+                    <Button x:Name="minus3_Copy1" Content="-" Canvas.Left="1005" BorderThickness="0" Canvas.Top="686" HorizontalAlignment="Center" VerticalAlignment="Top" Click="minus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Button x:Name="plus3_Copy1" Content="+" Canvas.Left="1152" BorderThickness="0" Canvas.Top="686" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Button.Effect>
+                    </Button>
+                    <Border x:Name="box1_Copy3" BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="120" VerticalAlignment="Center" Width="957" Background="#FFD7D4D4" Canvas.Top="648">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                        </Border.Effect>
+                    </Border>
+                    <Image x:Name="image_Copy3" Source="Geprek.jpeg" Height="78" Canvas.Left="45" Canvas.Top="668" Width="99" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Label x:Name="label1_Copy3" Content="Ayam Geprek" Height="60" Width="441" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Left="185" Canvas.Top="661" VerticalAlignment="Top"/>
+                    <Label x:Name="label2_Copy3" Content="Rp 12.000" Canvas.Left="185" Canvas.Top="704" Height="64" Width="128" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Label x:Name="Labl3_Copy1" Content="1" Canvas.Left="1088" Canvas.Top="677" FontSize="36"/>
+                </Canvas>
+            </ScrollViewer>
+            <Rectangle Height="166" Stroke="Black" Width="1366" Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center" StrokeThickness="0" Canvas.Top="601" Opacity="0.4">
+                <Rectangle.Effect>
+                    <BlurEffect/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Height="165" Stroke="Black" Width="1366" Fill="#FFD9D9D9" HorizontalAlignment="Center" VerticalAlignment="Center" StrokeThickness="0" Canvas.Top="603" RadiusY="-4"/>
+            <Button x:Name="Next_Food" Content="Next" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="NextFood" Foreground="Black" Background="White" Height="40" Canvas.Left="1104" Canvas.Top="636" Width="150">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="30"/>
+                        <Setter Property="CornerRadius" Value="20"/>
                     </Style>
                 </Button.Resources>
                 <Button.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
-            <Button x:Name="minus2" Content="-" Canvas.Left="1089" BorderThickness="0" Canvas.Top="372" Click="minus_2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
+            <Button x:Name="Back_Food" Content="Back" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="BackFood" Foreground="Black" Background="White" Height="40" Canvas.Left="108" Canvas.Top="636" Width="150">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="30"/>
+                        <Setter Property="CornerRadius" Value="20"/>
                     </Style>
                 </Button.Resources>
                 <Button.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
-            <Button x:Name="minus3" Content="-" Canvas.Left="1089" BorderThickness="0" Canvas.Top="552" HorizontalAlignment="Center" VerticalAlignment="Top" Click="minus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="30"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Effect>
+            <Rectangle Height="129" Stroke="Black" Width="1366" Fill="#FFD9D9D9" HorizontalAlignment="Center" VerticalAlignment="Center" StrokeThickness="0">
+                <Rectangle.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Button.Effect>
-            </Button>
-            <Button x:Name="plus2" Content="+" Canvas.Left="1236" BorderThickness="0" Canvas.Top="372" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_2" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="30"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Button.Effect>
-            </Button>
-            <Button x:Name="plus1" Content="+" Canvas.Left="1236" BorderThickness="0" Canvas.Top="204" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_1" Width="45" Height="46" RenderTransformOrigin="0.573,0.802" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="30"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Button.Effect>
-            </Button>
-            <Button x:Name="plus3" Content="+" Canvas.Left="1236" BorderThickness="0" Canvas.Top="552" HorizontalAlignment="Center" VerticalAlignment="Top" Click="plus_3" Width="45" Height="46" FontSize="36" Padding="1,-5,1,1" FontWeight="Bold">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="30"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Button.Effect>
-            </Button>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Label x:Name="label" Content="Food and Beverages" Canvas.Left="357" Height="108" Width="718" FontSize="72" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
     </Grid>
 </Page>

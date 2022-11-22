@@ -166,5 +166,17 @@
   <ItemGroup>
     <Resource Include="migoreng1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IndSoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MieDok2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="es teh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Geprek.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
