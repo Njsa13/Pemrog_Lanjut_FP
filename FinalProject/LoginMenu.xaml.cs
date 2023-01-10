@@ -30,5 +30,11 @@ namespace FinalProject
             var login = new Login();
             NavigationService.Navigate(login);
         }
+
+        private void CreateButton(object sender, RoutedEventArgs e)
+        {
+            var create = new Create();
+            NavigationService.Navigate(create);
+        }
     }
 }

@@ -14,6 +14,26 @@
                 <Canvas.Background>
                     <ImageBrush ImageSource="loginmenubg.jpg"/>
                 </Canvas.Background>
+                <Button x:Name="Create_Button" Content="Sign Up" FontSize="36" BorderThickness="1" FontWeight="Bold" Click="CreateButton" Background="#FFFAFAFB" Foreground="#FF575757" BorderBrush="Black" Width="250" Height="70" Padding="1,1,1,9.7" Canvas.Left="160" Canvas.Top="357">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="LoginMenuButton" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Click="MenuLogin_Click" Height="70" FontSize="36" BorderBrush="Black" BorderThickness="1" Background="#FFFAFAFB" Foreground="#FF575757" FontWeight="Bold" Canvas.Left="160" Canvas.Top="227" Padding="1,1,1,9.7">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+                    </Button.Effect>
+                </Button>
             </Canvas>
             <Border BorderBrush="#FF767676" BorderThickness="1" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="314" CornerRadius="40" Background="#FF767676" Panel.ZIndex="1" Canvas.Left="931" Canvas.Top="225">
                 <Border.Effect>
@@ -21,16 +41,6 @@
                 </Border.Effect>
                 <TextBlock TextWrapping="Wrap" FontSize="105" Margin="25,9,-1,-9" Foreground="#FFFAFAFB" FontWeight="Bold"><Run Text="Hehe"/><LineBreak/><Run Text="Net+"/></TextBlock>
             </Border>
-            <Button x:Name="LoginMenuButton" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Click="MenuLogin_Click" Height="70" FontSize="36" BorderBrush="Black" BorderThickness="1" Background="#FFFAFAFB" Foreground="#FF575757" FontWeight="Bold" Canvas.Left="146" Canvas.Top="225" Padding="1,1,1,9.7">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Button.Effect>
-            </Button>
             <TextBlock HorizontalAlignment="Left" Margin="494,10,0,0" TextWrapping="Wrap" Text="Login Menu" VerticalAlignment="Top" Foreground="#FFFAFAFB" FontSize="65" FontWeight="Bold" Panel.ZIndex="1" Width="371" >
                 <TextBlock.Effect>
                     <DropShadowEffect ShadowDepth="1" BlurRadius="3"/>

@@ -10,20 +10,7 @@
 
     <Grid>
         <Canvas Background="White">
-            <TextBox x:Name="Username" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="139" Width="400" Background="#FFD9D9D9" FontSize="20" Padding="35,4,0,0" TextAlignment="Justify" Margin="0" ScrollViewer.CanContentScroll="True">
-                <TextBox.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="25"/>
-                    </Style>
-                </TextBox.Resources>
-            </TextBox>
-            <TextBox x:Name="Password" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="253" Width="400" Background="#FFD9D9D9" Padding="35,4,0,0" FontSize="20">
-                <TextBox.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="25"/>
-                    </Style>
-                </TextBox.Resources>
-            </TextBox>
+            <TextBox x:Name="txtUsername" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="139" Width="400" Background="#FFD9D9D9" FontSize="20" Padding="8,4,0,0" TextAlignment="Justify" Margin="0" ScrollViewer.CanContentScroll="True"></TextBox>
             <Label Content="Username :" Canvas.Left="105" Canvas.Top="84" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
             <Label Content="Password :" Canvas.Left="105" Canvas.Top="198" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
             <Button x:Name="Back1" Content="Back" Canvas.Left="105" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="Back1_Click">
@@ -36,7 +23,7 @@
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
-            <Button x:Name="Create_Button" Content="Create" Canvas.Left="105" Canvas.Top="338" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="CreateButton" Foreground="#FFDDDDDD" Background="Black">
+            <Button x:Name="Login_Button" Content="Login" Canvas.Left="1109" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="LoginButton">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -46,16 +33,7 @@
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
-            <Button x:Name="Login_Button" Content="Login" Canvas.Left="355" Canvas.Top="338" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="LoginButton">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Effect>
-                    <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
-                </Button.Effect>
-            </Button>
+            <PasswordBox x:Name="txtPasswordnew" Canvas.Left="105" Canvas.Top="253" Width="400" Height="40" Background="#FFD9D9D9" BorderBrush="#FFABADB3" FontSize="20" Padding="8,4,0,0"/>
         </Canvas>
     </Grid>
 </Page>

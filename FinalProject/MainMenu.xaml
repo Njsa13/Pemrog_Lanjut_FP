@@ -78,7 +78,7 @@
                 <Label Content="Current Time" Foreground="White" HorizontalAlignment="Center" Padding="5,7,5,5" FontWeight="Bold" FontSize="20"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="192" Background="#FF444444" Canvas.Left="132" Canvas.Top="526">
-                <Label Content="14 : 25" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="26"/>
+                <Label Content="14 : 25 : 34" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="26"/>
             </Border>
             <Label Content="18 November 2022&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="477"/>
             <Label Content="No. 6 Computer" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="516"/>
@@ -109,22 +109,22 @@
             <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="38" Source="Icon2.png" RenderTransformOrigin="0.421,-0.188" Canvas.Left="1220" Canvas.Top="179"/>
             <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="38" Source="Icon1.png" RenderTransformOrigin="0.421,-0.188" Canvas.Left="1220" Canvas.Top="249"/>
             <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="38" Source="Icon3.png" RenderTransformOrigin="0.421,-0.188" Canvas.Left="1220" Canvas.Top="319"/>
-            <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="198" VerticalAlignment="Top" Width="360" Background="#FF767676" Canvas.Left="298" Canvas.Top="128">
+            <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="198" VerticalAlignment="Top" Width="450" Background="#FF767676" Canvas.Left="255" Canvas.Top="128">
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Border.Effect>
                 <Label Content="Time Left" HorizontalAlignment="Center" Margin="0" Padding="5,25,5,5" Foreground="White" FontWeight="Bold" FontSize="35"/>
             </Border>
-            <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="82" VerticalAlignment="Top" Width="236" Background="#FF444444" RenderTransformOrigin="0.5,0.5" Canvas.Left="360" Canvas.Top="208">
+            <Border BorderBrush="Black" CornerRadius="25" BorderThickness="0" HorizontalAlignment="Left" Height="82" VerticalAlignment="Top" Width="319" Background="#FF444444" RenderTransformOrigin="0.5,0.5" Canvas.Left="320" Canvas.Top="208">
                 <Border.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
-                        <SkewTransform AngleX="0.43"/>
+                        <SkewTransform AngleX="0.537"/>
                         <RotateTransform/>
                         <TranslateTransform X="0.742"/>
                     </TransformGroup>
                 </Border.RenderTransform>
-                <Label Content="03 : 47" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="White" Margin="38,0,38,8"/>
+                <Label x:Name="ShTime" Content="03 : 47 : 30" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="White" Margin="34,0,32,8" Width="253"/>
             </Border>
         </Canvas>
     </Grid>
