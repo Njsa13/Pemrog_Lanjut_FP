@@ -22,6 +22,7 @@ namespace FinalProject
     public partial class MainMenu : Page
     {
         GetSetData gtData = new GetSetData();
+
         public DispatcherTimer Timer;
         private int time;
 
@@ -30,6 +31,8 @@ namespace FinalProject
             InitializeComponent();
 
             time = gtData.getTime(gtData.getFile());
+
+            ShUsername.Content = string.Format("Username : {0}", gtData.getUsername(gtData.getFile()));
 
             Timer = new DispatcherTimer();
             Timer.Interval = new TimeSpan(0, 0, 1);
@@ -40,7 +43,10 @@ namespace FinalProject
         void Timer_Tick(object sender, EventArgs e)
         {
             if ((time > 0) && gtData.updateTime(gtData.getFile(), time))
-            {               
+            {
+                ShCurrentTime.Content = DateTime.Now.ToString("HH : mm : ss");
+                ShDate.Content = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+
                 if (time > 3600)
                 {
                     time--;
@@ -132,7 +138,7 @@ namespace FinalProject
 
         private void Add_Billing(object sender, RoutedEventArgs e)
         {
-            var addbilling = new AddBilling();
+            var addbilling = new GetBilling();
             NavigationService.Navigate(addbilling);
         }
 

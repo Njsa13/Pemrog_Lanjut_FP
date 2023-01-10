@@ -78,11 +78,11 @@
                 <Label Content="Current Time" Foreground="White" HorizontalAlignment="Center" Padding="5,7,5,5" FontWeight="Bold" FontSize="20"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="0" CornerRadius="20" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="192" Background="#FF444444" Canvas.Left="132" Canvas.Top="526">
-                <Label Content="14 : 25 : 34" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="26"/>
+                <Label x:Name="ShCurrentTime" Content="00 : 00 : 00" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="26"/>
             </Border>
-            <Label Content="18 November 2022&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="477"/>
+            <Label x:Name="ShDate" Content="-------------------&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="477"/>
             <Label Content="No. 6 Computer" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="516"/>
-            <Label Content="Username : Auli77" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="555"/>
+            <Label x:Name="ShUsername" Content="Username : -----" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" FontSize="16" FontWeight="Bold" Canvas.Left="515" Canvas.Top="555"/>
             <Border BorderThickness="1" CornerRadius="30" Height="151" Canvas.Left="79" Canvas.Top="249" Width="800" Opacity="0.7">
                 <Border.Background>
                     <ImageBrush ImageSource="Grad.png"/>
@@ -124,7 +124,7 @@
                         <TranslateTransform X="0.742"/>
                     </TransformGroup>
                 </Border.RenderTransform>
-                <Label x:Name="ShTime" Content="03 : 47 : 30" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="White" Margin="34,0,32,8" Width="253"/>
+                <Label x:Name="ShTime" Content="00 : 00 : 00" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="White" Margin="34,0,32,8" Width="253"/>
             </Border>
         </Canvas>
     </Grid>

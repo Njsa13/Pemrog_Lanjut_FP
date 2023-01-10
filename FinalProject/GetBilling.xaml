@@ -15,7 +15,7 @@
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Rectangle.Effect>
             </Rectangle>
-            <Label x:Name="label" Content="Get Billing" Canvas.Left="492" Height="108" Width="382" FontSize="72" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="10"/>
+            <Label x:Name="label" Content="Add Billing" Canvas.Left="492" Height="108" Width="382" FontSize="72" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="10"/>
             <Button x:Name="Bill_30m" Content="30 Menit" Canvas.Left="385" Canvas.Top="206" Width="220" Height="140" FontSize="24" BorderThickness="0" FontWeight="Bold" Click="Bill1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Padding="1,1,1,30">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
