@@ -10,11 +10,8 @@
 
     <Grid>
         <Canvas Background="White" Width="1366">
-            <TextBlock Canvas.Left="108" TextWrapping="Wrap" Canvas.Top="366" FontSize="25" FontWeight="Bold" Width="1175"><Run Text="--------------------------------------------------------------------------------------------------------------------"/><LineBreak/><Run/></TextBlock>
-            <TextBlock Canvas.Left="108" TextWrapping="Wrap" Canvas.Top="262" FontSize="25" Height="104" Width="409"><Run Text="+ 30 Menit"/><LineBreak/><Run Text="+ Indomie Soto + Telor"/><LineBreak/><Run Text="+ Es Teh"/></TextBlock>
-            <TextBlock Canvas.Left="1122" TextWrapping="Wrap" Canvas.Top="262" FontSize="25" Height="104" Width="161"><Run Text="Rp 5000"/><LineBreak/><Run Text="Rp 7000"/><LineBreak/><Run Text="Rp 3000"/></TextBlock>
             <TextBlock Canvas.Left="108" TextWrapping="Wrap" Canvas.Top="433" FontSize="25" FontWeight="Bold" Width="1175"><Run Text="--------------------------------------------------------------------------------------------------------------------"/><LineBreak/><Run/></TextBlock>
-            <Label Content="Total : Rp 15.000" Canvas.Left="1045" Canvas.Top="398" RenderTransformOrigin="6.684,1.115" FontSize="25"/>
+            <Label x:Name="Total" Content="Total : Rp ------" Canvas.Left="108" Canvas.Top="468" RenderTransformOrigin="6.684,1.115" FontSize="25"/>
             <Label Content="Pay With" Canvas.Left="919" Canvas.Top="468" RenderTransformOrigin="6.684,1.115" FontSize="25" FontWeight="Bold"/>
             <Viewbox Height="56" Canvas.Left="919" Stretch="Fill" Canvas.Top="525" Width="360">
                 <Grid Height="28" Width="180">
@@ -42,13 +39,14 @@
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
-            <Rectangle Height="129" Stroke="Black" Width="1366" Fill="#FFD9D9D9" HorizontalAlignment="Center" VerticalAlignment="Center" StrokeThickness="0" Margin="0,0,0,639">
+            <Rectangle Height="82" Stroke="Black" Width="1366" Fill="#FFD9D9D9" HorizontalAlignment="Center" VerticalAlignment="Center" StrokeThickness="0">
                 <Rectangle.Effect>
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Rectangle.Effect>
             </Rectangle>
-            <Label x:Name="label" Content="Billing List" Height="108" Width="365" FontSize="72" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="501,0,0,660"/>
-            <Label x:Name="label_Copy" Content="Total Item" Height="78" Width="238" FontSize="48" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="108,172,0,518"/>
+            <Label x:Name="label" Content="Billing List" Height="72" Width="234" FontSize="45" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="564"/>
+            <Label x:Name="label_Copy" Content="List Item" Height="78" Width="238" FontSize="48" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="108" Canvas.Top="87"/>
+            <DataGrid x:Name="listTb" Height="268" Canvas.Left="108" Canvas.Top="165" Width="986" ItemsSource="{Binding}" SelectionChanged="listTb_SelectionChanged" FontSize="20" MinColumnWidth="240"/>
         </Canvas>
 
     </Grid>

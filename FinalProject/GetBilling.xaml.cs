@@ -40,7 +40,7 @@ namespace FinalProject
 
             if (gtData.updateTime(gtData.getFile(), tempTime) && gtData.UpAndInsOdr(gtData.getFile(), "30 Menit", 1, price))
             {
-                MessageBox.Show("Add Billing Successfully", "Add Billing Success",
+                MessageBox.Show("Get Billing Successfully", "Get Billing Success",
                         MessageBoxButton.OK, MessageBoxImage.Information);
 
                 var mainmenu = new MainMenu();
@@ -48,7 +48,7 @@ namespace FinalProject
             }
             else
             {
-                MessageBox.Show("Failed to Add Billing", "Add Billing Failed",
+                MessageBox.Show("Failed to Get Billing", "Get Billing Failed",
                         MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -61,7 +61,7 @@ namespace FinalProject
 
             if (gtData.updateTime(gtData.getFile(), tempTime) && gtData.UpAndInsOdr(gtData.getFile(), "1 Jam", 1, price))
             {
-                MessageBox.Show("Add Billing Successfully", "Add Billing Success",
+                MessageBox.Show("Get Billing Successfully", "Get Billing Success",
                         MessageBoxButton.OK, MessageBoxImage.Information);
 
                 var mainmenu = new MainMenu();
@@ -69,7 +69,7 @@ namespace FinalProject
             }
             else
             {
-                MessageBox.Show("Failed to Add Billing", "Add Billing Failed",
+                MessageBox.Show("Failed to Get Billing", "Get Billing Failed",
                         MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -82,7 +82,7 @@ namespace FinalProject
 
             if (gtData.updateTime(gtData.getFile(), tempTime) && gtData.UpAndInsOdr(gtData.getFile(), "2 Jam", 1, price))
             {
-                MessageBox.Show("Add Billing Successfully", "Add Billing Success",
+                MessageBox.Show("Get Billing Successfully", "Get Billing Success",
                         MessageBoxButton.OK, MessageBoxImage.Information);
 
                 var mainmenu = new MainMenu();
@@ -90,7 +90,7 @@ namespace FinalProject
             }
             else
             {
-                MessageBox.Show("Failed to Add Billing", "Add Billing Failed",
+                MessageBox.Show("Failed to Get Billing", "Get Billing Failed",
                         MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -103,7 +103,7 @@ namespace FinalProject
 
             if (gtData.updateTime(gtData.getFile(), tempTime) && gtData.UpAndInsOdr(gtData.getFile(), "3 Jam", 1, price))
             {
-                MessageBox.Show("Add Billing Successfully", "Add Billing Success",
+                MessageBox.Show("Get Billing Successfully", "Get Billing Success",
                         MessageBoxButton.OK, MessageBoxImage.Information);
 
                 var mainmenu = new MainMenu();
@@ -111,7 +111,7 @@ namespace FinalProject
             }
             else
             {
-                MessageBox.Show("Failed to Add Billing", "Add Billing Failed",
+                MessageBox.Show("Failed to Get Billing", "Get Billing Failed",
                         MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }

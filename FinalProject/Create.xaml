@@ -10,9 +10,9 @@
 
     <Grid>
         <Canvas Background="White">
-            <TextBox x:Name="Username_Crt" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="140" Width="400" Background="#FFD9D9D9" FontSize="20" Padding="8,4,0,0" TextAlignment="Justify" Margin="0" ScrollViewer.CanContentScroll="True" TextChanged="Username_Crt_TextChanged"/>
-            <Label Content="Username :" Canvas.Left="105" Canvas.Top="85" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
-            <Label Content="Password :" Canvas.Left="105" Canvas.Top="215" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
+            <TextBox x:Name="Username_Crt" Height="40" Canvas.Left="105" TextWrapping="Wrap" Canvas.Top="157" Width="400" Background="#FFD9D9D9" FontSize="20" Padding="8,4,0,0" TextAlignment="Justify" Margin="0" ScrollViewer.CanContentScroll="True" TextChanged="Username_Crt_TextChanged"/>
+            <Label Content="Username :" Canvas.Left="105" Canvas.Top="102" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
+            <Label Content="Password :" Canvas.Left="105" Canvas.Top="232" FontSize="30" FontWeight="Bold" Width="200" Height="50"/>
             <Button x:Name="Create_Crt" Content="Create" Canvas.Left="1106" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="CreateCrt" Foreground="Black" Background="#FFDDDDDD">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -23,7 +23,7 @@
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
-            <Label Content="Confirm Password :" Canvas.Left="105" Canvas.Top="346" FontSize="30" FontWeight="Bold" Width="289" Height="50"/>
+            <Label Content="Confirm Password :" Canvas.Left="105" Canvas.Top="363" FontSize="30" FontWeight="Bold" Width="289" Height="50"/>
             <Button x:Name="Back_Crt" Content="Back" Canvas.Left="110" Canvas.Top="618" Width="150" Height="40" FontSize="20" BorderThickness="0" FontWeight="Bold" Click="BackCrt" Foreground="Black" Background="#FFDDDDDD" Padding="1">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -34,11 +34,17 @@
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
-            <TextBlock Canvas.Left="110" TextWrapping="Wrap" Text="Username Cannot Contain Spaces Example: net24" Canvas.Top="185" Opacity="0.5"/>
-            <TextBlock Canvas.Left="110" TextWrapping="Wrap" Text="Password Consists of 5 Characters or More and Does Not Contain Spaces" Canvas.Top="315" Opacity="0.5"/>
-            <PasswordBox x:Name="newPassCrt" Canvas.Left="105" Canvas.Top="270" Width="400" Height="40" Background="#FFD9D9D9" BorderBrush="#FFABADB3" FontSize="20" Padding="8,4,0,0"></PasswordBox>
-            <PasswordBox x:Name="newPassCrt1" Canvas.Left="105" Canvas.Top="401" Width="400" Height="40" Background="#FFD9D9D9" BorderBrush="#FFABADB3" FontSize="20" Padding="8,4,0,0"/>
+            <TextBlock Canvas.Left="110" TextWrapping="Wrap" Text="Username Cannot Contain Spaces Example: net24" Canvas.Top="202" Opacity="0.5"/>
+            <TextBlock Canvas.Left="110" TextWrapping="Wrap" Text="Password Consists of 5 Characters or More and Does Not Contain Spaces" Canvas.Top="332" Opacity="0.5"/>
+            <PasswordBox x:Name="newPassCrt" Canvas.Left="105" Canvas.Top="287" Width="400" Height="40" Background="#FFD9D9D9" BorderBrush="#FFABADB3" FontSize="20" Padding="8,4,0,0"></PasswordBox>
+            <PasswordBox x:Name="newPassCrt1" Canvas.Left="105" Canvas.Top="418" Width="400" Height="40" Background="#FFD9D9D9" BorderBrush="#FFABADB3" FontSize="20" Padding="8,4,0,0"/>
 
         </Canvas>
+        <Rectangle Height="82" Stroke="Black" Width="1366" HorizontalAlignment="Left" VerticalAlignment="Center" Fill="#FFD9D9D9" StrokeThickness="0" Margin="0,0,0,686">
+            <Rectangle.Effect>
+                <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label x:Name="label" Content="Sign Up" Height="82" Width="177" FontSize="45" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="590,0,0,686"/>
     </Grid>
 </Page>

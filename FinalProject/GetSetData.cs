@@ -277,5 +277,35 @@ namespace FinalProject
             }
         }
 
+        public DataTable DataList(int id_us)
+        {
+            string query = "SELECT `odr_name` AS 'Item', `price` AS 'Price (Rp)', `total` AS 'Number', `total_price` AS 'Total Price / Item (Rp)' FROM `odr` WHERE id_users = @id";
+
+            MySqlParameter[] parameters = new MySqlParameter[1];
+
+            parameters[0] = new MySqlParameter("@id", MySqlDbType.Int32);
+            parameters[0].Value = id_us;
+
+            DataTable table = new DataTable();
+            table = db.getData(query, parameters);
+
+            return table;
+        }
+
+        public int SumData(int id_us)
+        {
+            string query = "SELECT SUM(total_price) FROM odr WHERE id_users = @id";
+            string column = "SUM(total_price)";
+            int tempTtl;
+
+            MySqlParameter[] parameters = new MySqlParameter[1];
+
+            parameters[0] = new MySqlParameter("@id", MySqlDbType.Int32);
+            parameters[0].Value = id_us;
+
+            tempTtl = Int32.Parse(db.readData(query, column, parameters));
+
+            return tempTtl;
+        }
     }
 }

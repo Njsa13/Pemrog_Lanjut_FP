@@ -42,6 +42,7 @@ namespace FinalProject
 
         void Timer_Tick(object sender, EventArgs e)
         {
+
             if ((time > 0) && gtData.updateTime(gtData.getFile(), time))
             {
                 ShCurrentTime.Content = DateTime.Now.ToString("HH : mm : ss");
@@ -138,7 +139,8 @@ namespace FinalProject
 
         private void Add_Billing(object sender, RoutedEventArgs e)
         {
-            var addbilling = new GetBilling();
+            Timer.Stop();
+            var addbilling = new AddBilling();
             NavigationService.Navigate(addbilling);
         }
 
