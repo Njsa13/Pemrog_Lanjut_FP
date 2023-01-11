@@ -40,8 +40,8 @@
                 </Rectangle.Effect>
             </Rectangle>
             <Label x:Name="label" Content="Login" Height="74" Width="134" FontSize="45" FontWeight="Bold" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="604,0,0,694"/>
-            <TextBlock TextWrapping="Wrap" Text="Username Cannot Contain Spaces Example: net24" Opacity="0.5" Height="15" Canvas.Left="110" Canvas.Top="201" Width="262"/>
-            <TextBlock TextWrapping="Wrap" Text="Password Consists of 5 Characters or More and Does Not Contain Spaces" Opacity="0.5" Height="16" Canvas.Left="110" Canvas.Top="325" Width="387"/>
+            <TextBlock TextWrapping="Wrap" Text="Username Cannot Contain Spaces Example: net24" Opacity="0.5" Height="15" Canvas.Left="110" Canvas.Top="201" Width="295"/>
+            <TextBlock TextWrapping="Wrap" Text="Password Consists of 5 Characters or More and Does Not Contain Spaces" Opacity="0.5" Height="16" Canvas.Left="110" Canvas.Top="325" Width="412"/>
         </Canvas>
 
     </Grid>
