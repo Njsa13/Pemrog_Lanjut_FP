@@ -115,5 +115,26 @@ namespace FinalProject
                         MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void Demo_30s(object sender, RoutedEventArgs e)
+        {
+            int Time = gtData.getTime(gtData.getFile());
+            int price = 30000;
+            int tempTime = Time + 30;
+
+            if (gtData.updateTime(gtData.getFile(), tempTime) && gtData.UpAndInsOdr(gtData.getFile(), "3 Jam", 1, price))
+            {
+                MessageBox.Show("Get Billing Successfully", "Get Billing Success",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
+
+                var mainmenu = new MainMenu();
+                NavigationService.Navigate(mainmenu);
+            }
+            else
+            {
+                MessageBox.Show("Failed to Get Billing", "Get Billing Failed",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

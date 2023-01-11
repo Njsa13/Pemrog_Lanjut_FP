@@ -70,6 +70,7 @@
                     <DropShadowEffect ShadowDepth="2" Opacity="0.4"/>
                 </Button.Effect>
             </Button>
+            <Button x:Name="Demo" Content="Demo 30 s" Canvas.Left="1058" Canvas.Top="502" Width="76" Click="Demo_30s"/>
         </Canvas>
     </Grid>
 </Page>
